@@ -36,11 +36,6 @@ Durante o desenvolvimento deste projeto, foram utilizados os seguintes conceitos
 -   **Responsividade**: Criação de layouts que se adaptam perfeitamente a diferentes dispositivos.
 -   **Comparação com Tailwind CSS**: Exploração das principais diferenças entre **Bootstrap** e **Tailwind CSS**, focando na abordagem baseada em componentes do Bootstrap.
 
-## 📷 Screenshot do Projeto
-
-![Projeto com Bootstrap 5](./path-to-screenshot.png)
-_Visual do projeto desenvolvido com Bootstrap 5._
-
 ## 🎓 Curso
 
 Este projeto foi desenvolvido como parte do curso **"Bootstrap 5: Novos Recursos e Práticas Recomendadas de HTML, CSS e JavaScript"** da Alura, que aborda:
