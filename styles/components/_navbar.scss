@@ -1,0 +1,17 @@
+@use '../abstract/var';
+
+.form-check-input[type='checkbox'] {
+    border-color: var.$marrom-claro;
+
+    &:checked {
+        background-color: var.$marrom-claro;
+        border-color: var.$marrom-claro;
+    }
+    &:focus {
+        border-color: var.$marrom-claro;
+        box-shadow: var.$marrom-shadow;
+    }
+    &:not(:checked) {
+        --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23b29463'/%3e%3c/svg%3e");
+    }
+}

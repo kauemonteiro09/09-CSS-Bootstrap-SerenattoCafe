@@ -1,0 +1,6 @@
+@use '../abstract/var';
+
+.footer {
+    background-color: var.$marrom-claro;
+    height: 100%;
+}

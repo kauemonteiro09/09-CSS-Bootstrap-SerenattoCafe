@@ -1,0 +1,23 @@
+@use '../abstract/var';
+
+.servico-titulo {
+    font-size: 2.5rem;
+}
+
+.border-primary {
+    border-color: var.$marrom-claro !important;
+}
+
+.btn-primary {
+    background-color: var.$marrom-claro;
+    border: none;
+    display: block;
+    font-weight: 500;
+    color: var.$preto;
+    &:hover {
+        background-color: var.$marrom-escuro;
+    }
+    &:active {
+        background: var.$marrom-claro !important;
+    }
+}

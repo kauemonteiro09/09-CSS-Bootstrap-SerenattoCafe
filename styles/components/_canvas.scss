@@ -1,0 +1,13 @@
+@use '../abstract/var';
+
+.offcanvas {
+    font-family: var.$font-family;
+
+    .accordion-button {
+        background-color: var.$marrom-claro;
+        font-family: var.$font-family;
+        &:focus {
+            box-shadow: var.$marrom-shadow;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@use '../abstract/var';
+
+.form-control {
+    &:focus {
+        border-color: var.$marrom-claro;
+        box-shadow: var.$marrom-shadow;
+    }
+}
+
+.form-select {
+    &:focus {
+        border-color: var.$marrom-claro;
+        box-shadow: var.$marrom-shadow;
+    }
+}
+
+/* Estilo para o item destacado no dropdown quando está aberto */
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+    background-color: var.$marrom-hover !important;
+    opacity: 1;
+}
+/* Remove o fundo transparente da área fora do dropdown */
+.choices[data-type*='select-one'] .choices__inner {
+    background-color: transparent;
+}
+
+/* Ajuste de padding para o elemento Choices.js */
+.choices__inner {
+    // padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+}
+
+.choices__list--single .choices__item {
+    line-height: 2;
+}
+
+.form-range {
+    /* Estilo para a barra */
+    &::-webkit-slider-runnable-track {
+        background: var.$cinza-escuro; /* Cor da barra */
+    }
+    /* Estilo para a bolinha */
+    &::-webkit-slider-thumb {
+        background: var.$marrom-claro; /* Cor da bolinha */
+        box-shadow: none !important;
+
+        &:active {
+            background: var.$marrom-claro;
+            border-color: var.$marrom-claro !important;
+            box-shadow: var.$marrom-shadow !important;
+        }
+    }
+}

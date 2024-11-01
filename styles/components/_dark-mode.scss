@@ -1,0 +1,71 @@
+@use '../abstract/var';
+
+[data-bs-theme='dark'] {
+    //cor da fonte do body
+    color: var.$branco;
+
+    //cores dos nomes da Navbar
+    .nav-link {
+        --bs-nav-link-color: white;
+    }
+    //cores dos canvas
+    .offcanvas {
+        --bs-offcanvas-color: white;
+
+        .accordion-button {
+            --bs-accordion-btn-color: white;
+
+            &:not(.collapsed) {
+                --bs-accordion-active-color: white;
+            }
+            &:focus {
+                --bs-accordion-btn-focus-border-color: white;
+            }
+        }
+        .accordion-item {
+            --bs-accordion-color: white;
+        }
+    }
+
+    //cores dos cards
+    .card-body {
+        --bs-card-color: white;
+    }
+
+    //banner cor da marca
+    .banners-titulo {
+        --bs-bg-opacity: 0.2;
+        background-color: rgba(255, 255, 255, 0.118) !important;
+    }
+
+    //cores botões
+    .btn {
+        color: var.$branco;
+    }
+    .btn-primary {
+        &:hover {
+            color: var.$preto;
+        }
+    }
+
+    //nossos produtos titulo
+    h3 {
+        color: var.$branco;
+    }
+
+    // formulário cores
+    .choices__item {
+        background-color: #212529;
+    }
+
+    .choices__list--dropdown,
+    .choices__item--selectable[data-value=''] {
+        background-color: #212529; /* Cor de fundo dos outros itens */
+        color: #ffffff; /* Cor do texto */
+    }
+
+    .choices__item--selectable.is-highlighted {
+        background-color: var.$marrom-escuro !important;
+        opacity: 1;
+    }
+}
